@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1454423972155" stop="1454424007132" version="1.4.19" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>com.WallTest</name>
+    <title>Стена</title>
+    <test-cases>
+        <test-case start="1454423972155" stop="1454423983732" status="passed">
+            <name>userAddCommitAtWall</name>
+            <title>Добавление коммента к посту</title>
+            <steps>
+                <step start="1454423977253" stop="1454423979621" status="passed">
+                    <name>userAuthorize[+79268355733, 123456]</name>
+                    <title>Авторизоваться</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1454423979622" stop="1454423983722" status="passed">
+                    <name>addComment[Пост КГ/АМ, аффтор выпей йяду]</name>
+                    <title>Добавить комментарий</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="host" value="silaev-work-pc"/>
+                <label name="thread" value="18840@silaev-work-pc.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1454423983733" stop="1454423993122" status="passed">
+            <name>userAddWallPost</name>
+            <title>Добавление поста</title>
+            <description type="text">Позитивное</description>
+            <steps>
+                <step start="1454423989002" stop="1454423991362" status="passed">
+                    <name>userAuthorize[+79268355733, 123456]</name>
+                    <title>Авторизоваться</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1454423991363" stop="1454423993117" status="passed">
+                    <name>addWallPost[Всем стоять! Это ограбление!!!!]</name>
+                    <title>Добавить пост на стену</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="host" value="silaev-work-pc"/>
+                <label name="thread" value="18840@silaev-work-pc.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1454423993123" stop="1454424006637" status="passed">
+            <name>userDeleteWallPost</name>
+            <title>Удаление поста со стены</title>
+            <steps>
+                <step start="1454423998392" stop="1454424000662" status="passed">
+                    <name>userAuthorize[+79268355733, 123456]</name>
+                    <title>Авторизоваться</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1454424000663" stop="1454424006629" status="passed">
+                    <name>deletePost</name>
+                    <title>Удалить пост</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="host" value="silaev-work-pc"/>
+                <label name="thread" value="18840@silaev-work-pc.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="JUnit"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

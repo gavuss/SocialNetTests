@@ -1,0 +1,77 @@
+{
+  "uid" : "57a8095cf1f07506",
+  "name" : "userAddCommitAtWall",
+  "title" : "Добавление коммента к посту",
+  "time" : {
+    "start" : 1454423972155,
+    "stop" : 1454423983732,
+    "duration" : 11577
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 2
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "b28f645d8b5622bb",
+    "name" : "com.WallTest",
+    "title" : "Стена"
+  },
+  "steps" : [ {
+    "name" : "userAuthorize[+79268355733, 123456]",
+    "title" : "Авторизоваться",
+    "time" : {
+      "start" : 1454423977253,
+      "stop" : 1454423979621,
+      "duration" : 2368
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "addComment[Пост КГ/АМ, аффтор выпей йяду]",
+    "title" : "Добавить комментарий",
+    "time" : {
+      "start" : 1454423979622,
+      "stop" : 1454423983722,
+      "duration" : 4100
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "silaev-work-pc"
+  }, {
+    "name" : "thread",
+    "value" : "18840@silaev-work-pc.main(1)"
+  }, {
+    "name" : "suite-name",
+    "value" : "com.WallTest"
+  }, {
+    "name" : "suite-title",
+    "value" : "Стена"
+  }, {
+    "name" : "framework",
+    "value" : "JUnit"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  } ],
+  "parameters" : [ ]
+}

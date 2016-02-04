@@ -1,0 +1,80 @@
+{
+  "uid" : "6410cf75bfe9732d",
+  "name" : "userAddWallPost",
+  "title" : "Добавление поста",
+  "time" : {
+    "start" : 1454423983733,
+    "stop" : 1454423993122,
+    "duration" : 9389
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 2
+  },
+  "failure" : null,
+  "description" : {
+    "value" : "Позитивное",
+    "type" : "TEXT"
+  },
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "b28f645d8b5622bb",
+    "name" : "com.WallTest",
+    "title" : "Стена"
+  },
+  "steps" : [ {
+    "name" : "userAuthorize[+79268355733, 123456]",
+    "title" : "Авторизоваться",
+    "time" : {
+      "start" : 1454423989002,
+      "stop" : 1454423991362,
+      "duration" : 2360
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "addWallPost[Всем стоять! Это ограбление!!!!]",
+    "title" : "Добавить пост на стену",
+    "time" : {
+      "start" : 1454423991363,
+      "stop" : 1454423993117,
+      "duration" : 1754
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "silaev-work-pc"
+  }, {
+    "name" : "thread",
+    "value" : "18840@silaev-work-pc.main(1)"
+  }, {
+    "name" : "suite-name",
+    "value" : "com.WallTest"
+  }, {
+    "name" : "suite-title",
+    "value" : "Стена"
+  }, {
+    "name" : "framework",
+    "value" : "JUnit"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  } ],
+  "parameters" : [ ]
+}

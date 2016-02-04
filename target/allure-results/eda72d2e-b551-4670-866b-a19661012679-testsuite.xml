@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1454423947542" stop="1454424006639" version="1.4.19" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>com.SingInAccountTest</name>
+    <title>Авторизация</title>
+    <test-cases>
+        <test-case start="1454423947557" stop="1454423956522" status="passed">
+            <name>userNullPhone</name>
+            <title>Авторизация phone/password негативная</title>
+            <description type="text">Ввод телефона/логина "null"</description>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="silaev-work-pc"/>
+                <label name="thread" value="18840@silaev-work-pc.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1454423956597" stop="1454423963978" status="passed">
+            <name>userTwoeSumbolPhone</name>
+            <title>Авторизация phone/password негативная</title>
+            <description type="text">Ввод телефона/логина менее 3-х символов</description>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="silaev-work-pc"/>
+                <label name="thread" value="18840@silaev-work-pc.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1454423963980" stop="1454423972153" status="passed">
+            <name>userSingInAccount</name>
+            <title>Авторизация phone/password</title>
+            <description type="text">Позитивная авторизация используя связку phone/password</description>
+            <steps>
+                <step start="1454423969312" stop="1454423972142" status="passed">
+                    <name>userAuthorize[+79268355733, 123456]</name>
+                    <title>Авторизоваться</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="host" value="silaev-work-pc"/>
+                <label name="thread" value="18840@silaev-work-pc.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="JUnit"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>
