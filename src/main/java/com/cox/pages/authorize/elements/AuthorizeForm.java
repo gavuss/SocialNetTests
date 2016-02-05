@@ -28,10 +28,10 @@ public class AuthorizeForm extends HtmlElement {
     @FindBy (css = ".cox-confirmpassword")
     public Button confirmPasswdButton;
 
-    public void userAuthorize (String userPhone, String userPasswd) {
+    public void userAuthorize (String userPhone, String userPassword) {
         loginInput.sendKeys(userPhone);
         enterhButton.click();
-        passwdInput.sendKeys(userPasswd);
+        passwdInput.sendKeys(userPassword);
         confirmPasswdButton.click();
     }
 }

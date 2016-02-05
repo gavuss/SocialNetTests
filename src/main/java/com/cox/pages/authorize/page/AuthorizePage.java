@@ -43,8 +43,8 @@ public class AuthorizePage {
         this.driver = driver;
     }
     @Step("Авторизоваться")
-    public ProfilePage userAuthorize(String userPhone, String userPasswd) {
-        this.authorizeForm.userAuthorize(userPhone, userPasswd);
+    public ProfilePage userAuthorize(String userPhone, String userPassword) {
+        this.authorizeForm.userAuthorize(userPhone, userPassword);
         return new ProfilePage(driver);
     }
 

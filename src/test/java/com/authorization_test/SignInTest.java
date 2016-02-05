@@ -1,21 +1,18 @@
-package com;
+package com.authorization_test;
 
 import com.cox.pages.authorize.page.AuthorizePage;
 import com.cox.pages.profile.page.ProfilePage;
+import com.tests.ErrorMessage;
 import org.junit.Assert;
 import org.junit.Test;
-import ru.yandex.qatools.allure.annotations.Attachment;
 import ru.yandex.qatools.allure.annotations.Description;
-import ru.yandex.qatools.allure.annotations.Step;
 import ru.yandex.qatools.allure.annotations.Title;
 
-import java.net.URL;
-
 /**
- * Created by silaev on 1/20/16.
+ * Created by silaev on 2/5/16.
  */
 @Title("Авторизация")
-public class SignInAccountTest extends TestSettings {
+public class SignInTest extends TestSignInData{
 
     @Test
     @Title("Авторизация phone/password")
@@ -23,7 +20,8 @@ public class SignInAccountTest extends TestSettings {
     public void userSignInAccount() {
 
         AuthorizePage authorizePage = new AuthorizePage(driver);
-        ProfilePage profilePage = authorizePage.userAuthorize(userPhone, userPasswd);
+        ProfilePage profilePage = authorizePage.userAuthorize(userPhone, userPassword);
+        Assert.assertEquals(profilePage.coxHeaderBlock.coxRightMenu.exitLink, profilePage.coxHeaderBlock.coxRightMenu.exitLink.isDisplayed());
 
     }
 
@@ -34,9 +32,8 @@ public class SignInAccountTest extends TestSettings {
         AuthorizePage authorizePage = new AuthorizePage(driver);
         authorizePage.authorizeForm.loginInput.sendKeys(nullUserPhone);
         authorizePage.authorizeForm.enterhButton.click();
-        Assert.assertEquals(phoneError, authorizePage.getPhoneError());
+        Assert.assertEquals(ErrorMessage.phoneError, authorizePage.getPhoneError());
     }
-
     @Test
     @Title("Авторизация phone/password негативная")
     @Description("Ввод телефона/логина менее 3-х символов")
@@ -44,8 +41,9 @@ public class SignInAccountTest extends TestSettings {
         AuthorizePage authorizePage = new AuthorizePage(driver);
         authorizePage.authorizeForm.loginInput.sendKeys(twoSymbolPhone);
         authorizePage.authorizeForm.enterhButton.click();
-        Assert.assertEquals(phoneError, authorizePage.getPhoneError());
+        Assert.assertEquals(ErrorMessage.phoneError, authorizePage.getPhoneError());
     }
+
 
 
 }
