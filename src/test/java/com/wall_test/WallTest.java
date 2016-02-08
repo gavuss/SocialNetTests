@@ -1,5 +1,6 @@
-package com;
+package com.wall_test;
 
+import com.TestSettings;
 import com.cox.pages.authorize.page.AuthorizePage;
 import com.cox.pages.profile.page.ProfilePage;
 import org.junit.Test;

@@ -1,4 +1,4 @@
-package com.tests;
+package com.tests_data;
 
 /**
  * Created by silaev on 2/5/16.
