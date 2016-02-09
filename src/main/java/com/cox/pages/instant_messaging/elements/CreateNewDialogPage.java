@@ -1,4 +1,4 @@
-package com.cox.pages.im.page.page;
+package com.cox.pages.instant_messaging.elements;
 
 /**
  * Created by alexander on 2/8/16.

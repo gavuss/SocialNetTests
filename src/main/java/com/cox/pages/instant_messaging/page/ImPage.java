@@ -1,4 +1,4 @@
-package com.cox.pages.im.page.page;
+package com.cox.pages.instant_messaging.page;
 
 import com.cox.pages.cox.page.CoxPage;
 import org.openqa.selenium.support.FindBy;
