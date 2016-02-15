@@ -3,7 +3,7 @@ package com.tests_data;
 /**
  * Created by silaev on 2/5/16.
  */
-public class ErrorMessage {
+public class CoxErrorMessage {
     //Это статчиный атрибу(константа)
     public static final String phoneError = "Телефон/логин должен быть не менее 3 и не более 30 символов в длину";
     public static final String passwdError = "Пароль должен быть не менее 6 символов";
