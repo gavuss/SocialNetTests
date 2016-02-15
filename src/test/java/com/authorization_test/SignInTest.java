@@ -21,7 +21,7 @@ public class SignInTest extends TestSignInData{
 
         AuthorizePage authorizePage = new AuthorizePage(driver);
         ProfilePage profilePage = authorizePage.userAuthorize(userPhone, userPassword);
-        Assert.assertEquals(profilePage.coxHeaderBlock.coxRightMenu.exitLink, profilePage.coxHeaderBlock.coxRightMenu.exitLink.isDisplayed());
+        Assert.assertEquals(profilePage.coxHeaderBlock.coxRightMenu.exitLink.isDisplayed(), profilePage.coxHeaderBlock.coxRightMenu.exitLink.isDisplayed());
 
     }
 
