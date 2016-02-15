@@ -9,9 +9,10 @@ import ru.yandex.qatools.htmlelements.annotations.Name;
  */
 public class ImPage extends CoxPage {
 
+    /*
     @Name("Меню диалогов")
     @FindBy(css = ".sub-nav")
     public
-
+*/
 
 }

@@ -1,6 +1,6 @@
 package com.wall_test;
 
-import com.TestSettings;
+
 import com.cox.pages.authorize.page.AuthorizePage;
 import com.cox.pages.profile.page.ProfilePage;
 import org.junit.Test;
@@ -12,14 +12,14 @@ import ru.yandex.qatools.allure.annotations.Title;
  */
 
 @Title("Стена")
-public class WallTest extends TestSettings {
+public class WallTest extends TestWallData {
 
     @Title("Добавление поста")
     @Description("Позитивное")
     @Test
     public void userAddWallPost() {
         AuthorizePage authorizePage = new AuthorizePage(driver);
-        ProfilePage profilePage = authorizePage.userAuthorize(userPhone,userPasswd);
+        ProfilePage profilePage = authorizePage.userAuthorize(userPhone,userPassword);
         profilePage.addWallPost(wallMessage);
     }
 
@@ -27,7 +27,7 @@ public class WallTest extends TestSettings {
     @Test
     public void userAddCommitAtWall () {
         AuthorizePage authorizePage = new AuthorizePage(driver);
-        ProfilePage profilePage = authorizePage.userAuthorize(userPhone,userPasswd);
+        ProfilePage profilePage = authorizePage.userAuthorize(userPhone,userPassword);
         profilePage.addComment(wallComment);
     }
 
@@ -35,7 +35,7 @@ public class WallTest extends TestSettings {
     @Test
     public void userDeleteWallPost() {
         AuthorizePage authorizePage = new AuthorizePage(driver);
-        ProfilePage profilePage = authorizePage.userAuthorize(userPhone,userPasswd);
+        ProfilePage profilePage = authorizePage.userAuthorize(userPhone,userPassword);
         profilePage.deletePost();
     }
 

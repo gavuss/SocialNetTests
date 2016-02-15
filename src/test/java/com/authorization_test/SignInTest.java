@@ -2,7 +2,7 @@ package com.authorization_test;
 
 import com.cox.pages.authorize.page.AuthorizePage;
 import com.cox.pages.profile.page.ProfilePage;
-import com.tests.ErrorMessage;
+import com.tests_data.CoxErrorMessage;
 import org.junit.Assert;
 import org.junit.Test;
 import ru.yandex.qatools.allure.annotations.Description;
@@ -32,7 +32,7 @@ public class SignInTest extends TestSignInData{
         AuthorizePage authorizePage = new AuthorizePage(driver);
         authorizePage.authorizeForm.loginInput.sendKeys(nullUserPhone);
         authorizePage.authorizeForm.enterhButton.click();
-        Assert.assertEquals(ErrorMessage.phoneError, authorizePage.getPhoneError());
+        Assert.assertEquals(CoxErrorMessage.phoneError, authorizePage.getPhoneError());
     }
     @Test
     @Title("Авторизация phone/password негативная")
@@ -41,7 +41,7 @@ public class SignInTest extends TestSignInData{
         AuthorizePage authorizePage = new AuthorizePage(driver);
         authorizePage.authorizeForm.loginInput.sendKeys(twoSymbolPhone);
         authorizePage.authorizeForm.enterhButton.click();
-        Assert.assertEquals(ErrorMessage.phoneError, authorizePage.getPhoneError());
+        Assert.assertEquals(CoxErrorMessage.phoneError, authorizePage.getPhoneError());
     }
 
 
