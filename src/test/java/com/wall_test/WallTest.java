@@ -13,7 +13,7 @@ import ru.yandex.qatools.allure.annotations.Title;
 
 @Title("Стена")
 public class WallTest extends TestWallData {
-
+/*
     @Title("Добавление поста")
     @Description("Позитивное")
     @Test
@@ -39,5 +39,5 @@ public class WallTest extends TestWallData {
         profilePage.deletePost();
     }
 
-
+*/
 }
