@@ -13,8 +13,8 @@ import java.util.concurrent.TimeUnit;
 /**
  * Created by silaev on 1/20/16.
  */
-public class TestSettings {
-    public WebDriver driver;
+public class GlobalTestSettings {
+    public static WebDriver driver;
 
     @Before
     public void setUp() {
@@ -30,7 +30,7 @@ public class TestSettings {
     }
 
     @Attachment(value = "Page screenshot {0}", type = "image/png")
-    protected byte[] saveAllureScreenshot() {
+    public  byte[] saveAllureScreenshot() {
         return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
     }
 
