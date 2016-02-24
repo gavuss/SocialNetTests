@@ -81,8 +81,8 @@ public class ProfilePage extends CoxPage {
     }
 
     @Step("Открыть страницу \"Альбомы\"")
-    public AlbumsPage openAlbumsPage () {
-        userPersonalPhotosBlock.albumsPageLink.clickAlbumsPageLink();
-        return new AlbumsPage();
+    public AlbumsPage openAlbumsPage (WebDriver driver) {
+        userPersonalPhotosBlock.albumsPageLink.clickAlbumsPageLink(driver);
+        return new AlbumsPage(driver);
     }
 }

@@ -14,7 +14,7 @@ import java.util.concurrent.TimeUnit;
  * Created by silaev on 1/20/16.
  */
 public class GlobalTestSettings {
-    public static WebDriver driver;
+    public WebDriver driver;
 
     @Before
     public void setUp() {

@@ -1,4 +1,5 @@
 package com.cox.pages.photo.albums.page;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import ru.yandex.qatools.htmlelements.element.Link;
 
@@ -11,8 +12,8 @@ public class AlbumsPageLink extends Link {
         super(wrappedElement);
     }
 
-   public AlbumsPage clickAlbumsPageLink () {
+   public AlbumsPage clickAlbumsPageLink (WebDriver driver) {
        this.click();
-       return new AlbumsPage();
+       return new AlbumsPage(driver);
     }
 }
