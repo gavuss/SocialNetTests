@@ -1,67 +1,12 @@
 {
   "testCases" : [ {
-    "uid" : "57a8095cf1f07506",
-    "name" : "userAddCommitAtWall",
-    "title" : "Добавление коммента к посту",
-    "time" : {
-      "start" : 1454423972155,
-      "stop" : 1454423983732,
-      "duration" : 11577
-    },
-    "severity" : "NORMAL",
-    "status" : "PASSED"
-  }, {
-    "uid" : "6410cf75bfe9732d",
-    "name" : "userAddWallPost",
-    "title" : "Добавление поста",
-    "time" : {
-      "start" : 1454423983733,
-      "stop" : 1454423993122,
-      "duration" : 9389
-    },
-    "severity" : "NORMAL",
-    "status" : "PASSED"
-  }, {
-    "uid" : "591b92db1122e28e",
-    "name" : "userDeleteWallPost",
-    "title" : "Удаление поста со стены",
-    "time" : {
-      "start" : 1454423993123,
-      "stop" : 1454424006637,
-      "duration" : 13514
-    },
-    "severity" : "NORMAL",
-    "status" : "PASSED"
-  }, {
-    "uid" : "76541fb8092ed6cd",
-    "name" : "userNullPhone",
-    "title" : "Авторизация phone/password негативная",
-    "time" : {
-      "start" : 1454423947557,
-      "stop" : 1454423956522,
-      "duration" : 8965
-    },
-    "severity" : "NORMAL",
-    "status" : "PASSED"
-  }, {
-    "uid" : "3a79ad9e0f352941",
-    "name" : "userTwoeSumbolPhone",
-    "title" : "Авторизация phone/password негативная",
-    "time" : {
-      "start" : 1454423956597,
-      "stop" : 1454423963978,
-      "duration" : 7381
-    },
-    "severity" : "NORMAL",
-    "status" : "PASSED"
-  }, {
-    "uid" : "5a2cfb2bf1702d8b",
-    "name" : "userSingInAccount",
+    "uid" : "62eb1256d229bf24",
+    "name" : "userSignInAccount",
     "title" : "Авторизация phone/password",
     "time" : {
-      "start" : 1454423963980,
-      "stop" : 1454423972153,
-      "duration" : 8173
+      "start" : 1455978047370,
+      "stop" : 1455978064857,
+      "duration" : 17487
     },
     "severity" : "NORMAL",
     "status" : "PASSED"

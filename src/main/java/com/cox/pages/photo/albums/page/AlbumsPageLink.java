@@ -1,5 +1,4 @@
 package com.cox.pages.photo.albums.page;
-
 import org.openqa.selenium.WebElement;
 import ru.yandex.qatools.htmlelements.element.Link;
 

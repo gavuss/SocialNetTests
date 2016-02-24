@@ -1,4 +1,7 @@
-/home/silaev/Idea/IdeaProjects/SocialNetTests/src/test/java/com/TestSettings.java
-/home/silaev/Idea/IdeaProjects/SocialNetTests/src/test/java/com/User.java
-/home/silaev/Idea/IdeaProjects/SocialNetTests/src/test/java/com/SingInAccountTest.java
-/home/silaev/Idea/IdeaProjects/SocialNetTests/src/test/java/com/WallTest.java
+/home/silaev/Idea/idea-project/SocialNetTests/src/test/java/com/wall_test/WallTest.java
+/home/silaev/Idea/idea-project/SocialNetTests/src/test/java/com/tests_data/CoxErrorMessage.java
+/home/silaev/Idea/idea-project/SocialNetTests/src/test/java/com/authorization_test/SignInTest.java
+/home/silaev/Idea/idea-project/SocialNetTests/src/test/java/com/wall_test/TestWallData.java
+/home/silaev/Idea/idea-project/SocialNetTests/src/test/java/com/authorization_test/TestSignInData.java
+/home/silaev/Idea/idea-project/SocialNetTests/src/test/java/com/TestSettings.java
+/home/silaev/Idea/idea-project/SocialNetTests/src/test/java/com/User.java

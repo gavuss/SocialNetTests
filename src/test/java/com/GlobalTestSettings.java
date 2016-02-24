@@ -24,11 +24,11 @@ public class GlobalTestSettings {
         driver.get("https://dev03.cox.ru/");
     }
 
-    @After
+   /* @After
     public void tearDown() {
         driver.close();
     }
-
+*/
     @Attachment(value = "Page screenshot {0}", type = "image/png")
     public  byte[] saveAllureScreenshot() {
         return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);

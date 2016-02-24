@@ -20,8 +20,8 @@ public class SignInTest extends TestSignInData {
     @Description("Позитивная авторизация используя связку phone/password")
     public void userSignInAccount() {
         AuthorizePage authorizePage = new AuthorizePage(driver);
-        ProfilePage profilePage = authorizePage.userAuthorize(userPhone, userPassword);
         saveAllureScreenshot();
+        ProfilePage profilePage = authorizePage.userAuthorize(userPhone, userPassword);
         Assert.assertEquals(profilePage.coxHeaderBlock.coxRightMenu.exitLink.isDisplayed(), profilePage.coxHeaderBlock.coxRightMenu.exitLink.isDisplayed());
         saveAllureScreenshot();
     }

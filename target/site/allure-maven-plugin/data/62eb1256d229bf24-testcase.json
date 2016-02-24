@@ -1,0 +1,77 @@
+{
+  "uid" : "62eb1256d229bf24",
+  "name" : "userSignInAccount",
+  "title" : "Авторизация phone/password",
+  "time" : {
+    "start" : 1455978047370,
+    "stop" : 1455978064857,
+    "duration" : 17487
+  },
+  "summary" : {
+    "attachments" : 2,
+    "steps" : 1
+  },
+  "failure" : null,
+  "description" : {
+    "value" : "Позитивная авторизация используя связку phone/password",
+    "type" : "TEXT"
+  },
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "f12f95a21ebc07ab",
+    "name" : "com.authorization_test.SignInTest",
+    "title" : "Авторизация"
+  },
+  "steps" : [ {
+    "name" : "userAuthorize[79268355733, 123456]",
+    "title" : "Авторизоваться",
+    "time" : {
+      "start" : 1455978060912,
+      "stop" : 1455978061710,
+      "duration" : 798
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ {
+    "title" : "Page screenshot {0}",
+    "source" : "6eff7736-2b87-4253-b286-6f847f3013d2-attachment.png",
+    "type" : "image/png",
+    "size" : 8293932,
+    "uid" : "d18f16942817a8b"
+  }, {
+    "title" : "Page screenshot {0}",
+    "source" : "cc7b4ead-8a53-4323-bfb5-cdde6ded4b7d-attachment.png",
+    "type" : "image/png",
+    "size" : 1093574,
+    "uid" : "9b62c3e78dedc6c0"
+  } ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "silaev-work-pc"
+  }, {
+    "name" : "thread",
+    "value" : "16848@silaev-work-pc.main(1)"
+  }, {
+    "name" : "suite-name",
+    "value" : "com.authorization_test.SignInTest"
+  }, {
+    "name" : "suite-title",
+    "value" : "Авторизация"
+  }, {
+    "name" : "framework",
+    "value" : "JUnit"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  } ],
+  "parameters" : [ ]
+}

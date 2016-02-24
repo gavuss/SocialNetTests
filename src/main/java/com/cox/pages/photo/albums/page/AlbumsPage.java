@@ -1,6 +1,7 @@
 package com.cox.pages.photo.albums.page;
 
-import com.cox.pages.photo.albums.elements.CreateAlbumButton;
+import com.cox.pages.cox.elements.CoxPopUp;
+import com.cox.pages.photo.albums.elements.CreateAlbumLink;
 import com.cox.pages.photo.albums.elements.SearchPhotos;
 import com.cox.pages.cox.page.CoxPage;
 import org.openqa.selenium.support.FindBy;
@@ -17,5 +18,10 @@ public class AlbumsPage extends CoxPage {
 
     @Name("Кнопка \"Новый альбом\"")
     @FindBy (css = ".cox-albums-newalbum")
-    public CreateAlbumButton createAlbumButton;
+    public CreateAlbumLink createAlbumLink;
+
+    public CoxPopUp createNewAlbum(){
+        createAlbumLink.clickCreateAlbumButton();
+        return new CoxPopUp();
+    }
 }
