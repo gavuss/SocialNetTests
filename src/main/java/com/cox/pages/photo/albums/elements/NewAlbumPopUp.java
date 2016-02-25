@@ -46,6 +46,12 @@ public class NewAlbumPopUp extends HtmlElement {
         albumsDescr.sendKeys(albumDescr);
         albumsCreate.click();
     }
+    public void closePopUp () {
+        coxPopupClose.click();
+    }
 
+    public void cancelPopUp () {
+        albumsCancelCreate.click();
+    }
 
 }

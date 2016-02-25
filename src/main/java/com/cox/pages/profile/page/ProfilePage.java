@@ -71,10 +71,11 @@ public class ProfilePage extends CoxPage {
     }
 
     @Step("Добавить комментарий")
-    public void addComment(String wallComment) {
-        userPersonalWallBlock.wallPostList.get(0).enterWallComment(wallComment).addWallComment();
+    public void addComment(String wallComment, int n) {
+        userPersonalWallBlock.wallPostList.get(n).enterWallComment(wallComment).addWallComment();
     }
 
+    //TODO: перделай метод как тут описано http://automated-testing.info/t/rabota-s-sobytiyami-v-selenium/1861/5
     @Step("Удалить пост")
     public void deletePost() {
         userPersonalWallBlock.wallPostList.get(0).deleteWallPost();

@@ -28,7 +28,7 @@ public class WallTest extends TestWallData {
     public void userAddCommitAtWall () {
         AuthorizePage authorizePage = new AuthorizePage(driver);
         ProfilePage profilePage = authorizePage.userAuthorize(userPhone,userPassword);
-        profilePage.addComment(wallComment);
+        profilePage.addComment(wallComment, n);
     }
 
     @Title("Удаление поста со стены")
