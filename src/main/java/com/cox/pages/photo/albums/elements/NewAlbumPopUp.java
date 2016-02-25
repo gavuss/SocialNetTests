@@ -3,6 +3,7 @@ package com.cox.pages.photo.albums.elements;
 import com.cox.pages.photo.view_album.page.ViewAlbumPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
+import ru.yandex.qatools.allure.annotations.Step;
 import ru.yandex.qatools.htmlelements.annotations.Name;
 import ru.yandex.qatools.htmlelements.element.Button;
 import ru.yandex.qatools.htmlelements.element.HtmlElement;
@@ -39,9 +40,9 @@ public class NewAlbumPopUp extends HtmlElement {
     @FindBy(css = ".cox-albums-cancel-create")
     public Button albumsCancelCreate;
 
+    @Step ("Добавить альбом")
     public void createAlbum (String albumName, String albumPrivacy,String albumDescr) {
         albumsName.sendKeys(albumName);
-        System.out.println("===========================================================");
         albumsPrivacy.selectByVisibleText(albumPrivacy);
         albumsDescr.sendKeys(albumDescr);
         albumsCreate.click();

@@ -16,4 +16,11 @@ public class AlbumTest extends TestCreateAlbumData{
         ProfilePage profilePage = authorizePage.userAuthorize(userPhone, userPassword);
         profilePage.openAlbumsPage(driver).openNewAlbumPopUp().createAlbum(albumName, albumPrivacy, albumDescr);
     }
+
+    @Test
+    public void OpenAlbum () {
+        AuthorizePage authorizePage = new AuthorizePage(driver);
+        ProfilePage profilePage = authorizePage.userAuthorize(userPhone, userPassword);
+        profilePage.openAlbumsPage(driver).allAlbums.click().album.get(i).click();
+    }
 }

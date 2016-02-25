@@ -12,6 +12,7 @@ import ru.yandex.qatools.htmlelements.element.HtmlElement;
 import ru.yandex.qatools.htmlelements.loader.HtmlElementLoader;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by silaev on 2/24/16.
@@ -50,7 +51,7 @@ public class AlbumsPage extends CoxPage {
 
     @Name("Блок альбомов")
     @FindBy (css = ".cox-albums-albums")
-    public ArrayList<Album> album;
+    public List<Album> album;
 
 
     public NewAlbumPopUp openNewAlbumPopUp() {

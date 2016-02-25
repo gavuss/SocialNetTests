@@ -12,4 +12,5 @@ public class TestCreateAlbumData extends GlobalTestSettings {
     String albumName = "Альбом-БЛЯ!";
     String albumPrivacy = "Виден всем";
     String albumDescr = "Какая-то херня вместо текста";
+    int i = 1;
 }
