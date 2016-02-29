@@ -6,11 +6,14 @@ import com.cox.pages.profile.elements.avatar.UserPersonAvaBlock;
 import com.cox.pages.profile.elements.photos.UserPersonalPhotosBlock;
 import com.cox.pages.profile.elements.profile_menu.ProfileMenuBlock;
 import com.cox.pages.profile.elements.wall.UserPersonalWallBlock;
+import com.cox.pages.profile.elements.wall.wall_post.WallPost;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.support.FindBy;
 import ru.yandex.qatools.allure.annotations.Step;
 import ru.yandex.qatools.htmlelements.annotations.Name;
-import ru.yandex.qatools.htmlelements.loader.HtmlElementLoader;
+
 
 /**
  * Created by silaev on 1/20/16.
@@ -18,15 +21,8 @@ import ru.yandex.qatools.htmlelements.loader.HtmlElementLoader;
 public class ProfilePage extends CoxPage {
 
     public ProfilePage(WebDriver driver) {
-        HtmlElementLoader.populate(this, driver);
+        super(driver);
     }
-
-
-    /*
-    public ProfilePage(WebDriver driver) {
-        PageFactory.initElements(new HtmlElementDecorator(new HtmlElementLocatorFactory(driver)), this);
-    }
-    */
 
     /*@Name("Песрсональная информация")
     @FindBy(".cox-block-view")
@@ -71,18 +67,27 @@ public class ProfilePage extends CoxPage {
     }
 
     @Step("Добавить комментарий")
-    public void addComment(String wallComment, int n) {
-        userPersonalWallBlock.wallPostList.get(n).enterWallComment(wallComment).addWallComment();
+    public void addComment(String wallComment, int addComentPostNumber) {
+        userPersonalWallBlock.wallPostList.get(addComentPostNumber).enterWallComment(wallComment).addWallComment();
     }
 
-    //TODO: перделай метод как тут описано http://automated-testing.info/t/rabota-s-sobytiyami-v-selenium/1861/5
     @Step("Удалить пост")
-    public void deletePost() {
-        userPersonalWallBlock.wallPostList.get(0).deleteWallPost();
+    public void deletePost(int deletePostNumber) {
+        WallPost wallPost = userPersonalWallBlock.wallPostList.get(deletePostNumber);
+        new Actions(driver).moveToElement(wallPost.getWrappedElement()).perform();
+        wallPost.deleteWallPostButton.click();
+
+        /*
+        Actions builder = new Actions(driver);
+        Action mouseOverHome = builder.moveToElement(wallPost.getWrappedElement()).build();
+        mouseOverHome.perform();
+        wallPost.deleteWallPostButton.click();
+        */
+
     }
 
     @Step("Открыть страницу \"Альбомы\"")
-    public AlbumsPage openAlbumsPage (WebDriver driver) {
+    public AlbumsPage openAlbumsPage(WebDriver driver) {
         userPersonalPhotosBlock.albumsPageLink.clickAlbumsPageLink(driver);
         return new AlbumsPage(driver);
     }

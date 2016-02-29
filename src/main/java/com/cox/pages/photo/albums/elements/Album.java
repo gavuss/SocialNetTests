@@ -1,5 +1,6 @@
 package com.cox.pages.photo.albums.elements;
 
+import com.cox.pages.photo.view_album.page.ViewAlbumPage;
 import org.openqa.selenium.support.FindBy;
 import ru.yandex.qatools.htmlelements.annotations.Name;
 import ru.yandex.qatools.htmlelements.element.Button;
@@ -11,7 +12,7 @@ import ru.yandex.qatools.htmlelements.element.TextBlock;
  */
 
 @Name("Альбом")
-@FindBy(css = ".cox-albums-album")
+//@FindBy(css = ".cox-albums-album")
 public class Album extends HtmlElement {
 
     @Name("Кнопка \"Удалить альбом\"")
@@ -35,11 +36,11 @@ public class Album extends HtmlElement {
         albumsRemove.click();
     }
 
-    /*
-    public void albumPhotoCount () {
+
+    public int albumPhotoCount () {
         return Integer.valueOf(photoCount.getText());
     }
-    */
+
 
     public String albumName () {
         return albumName.getText();

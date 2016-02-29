@@ -13,31 +13,35 @@ import ru.yandex.qatools.allure.annotations.Title;
 
 @Title("Стена")
 public class WallTest extends TestWallData {
-/*
+
+    @Test
     @Title("Добавление поста")
     @Description("Позитивное")
-    @Test
     public void userAddWallPost() {
         AuthorizePage authorizePage = new AuthorizePage(driver);
-        ProfilePage profilePage = authorizePage.userAuthorize(userPhone,userPassword);
+        ProfilePage profilePage = authorizePage.userAuthorize(userPhone, userPassword);
+        saveAllureScreenshot();
         profilePage.addWallPost(wallMessage);
+        saveAllureScreenshot();
     }
 
-    @Title("Добавление коммента к посту")
     @Test
-    public void userAddCommitAtWall () {
-        AuthorizePage authorizePage = new AuthorizePage(driver);
-        ProfilePage profilePage = authorizePage.userAuthorize(userPhone,userPassword);
-        profilePage.addComment(wallComment, n);
-    }
-
     @Title("Удаление поста со стены")
-    @Test
     public void userDeleteWallPost() {
         AuthorizePage authorizePage = new AuthorizePage(driver);
-        ProfilePage profilePage = authorizePage.userAuthorize(userPhone,userPassword);
-        profilePage.deletePost();
+        ProfilePage profilePage = authorizePage.userAuthorize(userPhone, userPassword);
+
+        profilePage.deletePost(deletePostNumber);
+        saveAllureScreenshot();
     }
 
-*/
+    @Test
+    @Title("Добавление коммента к посту")
+    public void userAddCommitAtWall() {
+        AuthorizePage authorizePage = new AuthorizePage(driver);
+        ProfilePage profilePage = authorizePage.userAuthorize(userPhone, userPassword);
+        profilePage.addComment(wallComment, addCommentPostNumber);
+    }
+
+
 }

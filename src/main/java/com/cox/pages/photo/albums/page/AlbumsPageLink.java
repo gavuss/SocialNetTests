@@ -16,4 +16,6 @@ public class AlbumsPageLink extends Link {
        this.click();
        return new AlbumsPage(driver);
     }
+
+
 }

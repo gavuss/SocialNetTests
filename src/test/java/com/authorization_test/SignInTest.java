@@ -26,29 +26,26 @@ public class SignInTest extends TestSignInData {
         saveAllureScreenshot();
     }
 
-    /*
 
-        @Test
-        @Title("Авторизация phone/password негативная")
-        @Description("Ввод телефона/логина \"null\"")
-        public void userNullPhone() {
-    //        saveImageAttach("Image attach");
-            AuthorizePage authorizePage = new AuthorizePage(driver);
-            authorizePage.authorizeForm.loginInput.sendKeys(nullUserPhone);
-            authorizePage.authorizeForm.enterhButton.click();
-            Assert.assertEquals(CoxErrorMessage.phoneError, authorizePage.getPhoneError());
-        }
+    @Test
+    @Title("Авторизация phone/password негативная")
+    @Description("Ввод телефона/логина \"null\"")
+    public void userNullPhone() {
+        saveAllureScreenshot();
+        AuthorizePage authorizePage = new AuthorizePage(driver);
+        authorizePage.authorizeForm.loginInput.sendKeys(nullUserPhone);
+        authorizePage.authorizeForm.enterhButton.click();
+        Assert.assertEquals(CoxErrorMessage.phoneError, authorizePage.getPhoneError());
+    }
 
-        @Test
-        @Title("Авторизация phone/password негативная")
-        @Description("Ввод телефона/логина менее 3-х символов")
-        public void userTwoeSumbolPhone() {
-            AuthorizePage authorizePage = new AuthorizePage(driver);
-            authorizePage.authorizeForm.loginInput.sendKeys(twoSymbolPhone);
-            authorizePage.authorizeForm.enterhButton.click();
-            Assert.assertEquals(CoxErrorMessage.phoneError, authorizePage.getPhoneError());
-        }
-    */
-
+    @Test
+    @Title("Авторизация phone/password негативная")
+    @Description("Ввод телефона/логина менее 3-х символов")
+    public void userTwoeSumbolPhone() {
+        AuthorizePage authorizePage = new AuthorizePage(driver);
+        authorizePage.authorizeForm.loginInput.sendKeys(twoSymbolPhone);
+        authorizePage.authorizeForm.enterhButton.click();
+        Assert.assertEquals(CoxErrorMessage.phoneError, authorizePage.getPhoneError());
+    }
 
 }

@@ -9,7 +9,7 @@ public class User {
     public String login;
     public String email;
 
-    public static User createValidUser (){
+    public User createValidUser (){
         User user= new User();
         user.login = "";
         user.password = "123456";

@@ -1,10 +1,11 @@
 package com.cox.pages.profile.elements.wall;
 
 import com.cox.pages.profile.elements.wall.add_wall_post_form.AddWallPostForm;
-import com.cox.pages.profile.elements.wall.wall_post.WallPostItem;
+import com.cox.pages.profile.elements.wall.wall_post.WallPost;
 import org.openqa.selenium.support.FindBy;
 import ru.yandex.qatools.htmlelements.annotations.Name;
 import ru.yandex.qatools.htmlelements.element.HtmlElement;
+
 
 import java.util.List;
 
@@ -17,10 +18,7 @@ public class UserPersonalWallBlock extends HtmlElement{
     @FindBy(css = ".cox-post-edit")
     public AddWallPostForm addWallPostForm;
 
-    @Name("Списко постов на стене")
-    @FindBy(css = ".cox-wall-posts")
-    public List<WallPostItem> wallPostList;
-
-
-
+    @Name("Список постов на стене")
+    @FindBy(css = ".cox-post")
+    public List<WallPost> wallPostList;
 }

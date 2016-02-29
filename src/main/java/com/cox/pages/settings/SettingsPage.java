@@ -2,6 +2,7 @@ package com.cox.pages.settings;
 
 import com.cox.pages.cox.page.CoxPage;
 import com.cox.pages.profile.elements.profile_menu.ProfileMenuBlock;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 import ru.yandex.qatools.htmlelements.annotations.Name;
 
@@ -10,6 +11,9 @@ import ru.yandex.qatools.htmlelements.annotations.Name;
  */
 public class SettingsPage extends CoxPage {
 
+    public SettingsPage(WebDriver driver) {
+        super(driver);
+    }
     /*
     @Name("Подтверждение входа")
     @FindBy(css =".content__layout:nth-child(1)")

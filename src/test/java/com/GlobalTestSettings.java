@@ -14,6 +14,7 @@ import java.util.concurrent.TimeUnit;
  * Created by silaev on 1/20/16.
  */
 public class GlobalTestSettings {
+
     public WebDriver driver;
 
     @Before
@@ -24,13 +25,14 @@ public class GlobalTestSettings {
         driver.get("https://dev03.cox.ru/");
     }
 
-   /* @After
+    @After
     public void tearDown() {
         driver.close();
     }
-*/
+
+
     @Attachment(value = "Page screenshot {0}", type = "image/png")
-    public  byte[] saveAllureScreenshot() {
+    public byte[] saveAllureScreenshot() {
         return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
     }
 

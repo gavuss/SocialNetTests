@@ -19,12 +19,12 @@ import java.util.List;
  */
 public class AlbumsPage extends CoxPage {
 
-    private WebDriver driver;
+    //private WebDriver driver;
 
     public AlbumsPage(WebDriver driver) {
-        this.driver = driver;
-        HtmlElementLoader.populate(this, driver);
+        super(driver);
     }
+
 
     @Name("Поиск")
     @FindBy(css = ".m-search")
@@ -49,8 +49,8 @@ public class AlbumsPage extends CoxPage {
     @FindBy (css = ".cox-albums-loading-albums")
     public HtmlElement allAlbums;
 
-    @Name("Блок альбомов")
-    @FindBy (css = ".cox-albums-albums")
+    @Name("Список альбомов")
+    @FindBy (css = ".cox-albums-album")
     public List<Album> album;
 
 

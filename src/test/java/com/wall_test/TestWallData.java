@@ -12,7 +12,8 @@ public class TestWallData extends GlobalTestSettings {
     String userPassword = "123456";
     String wallMessage = "Всем стоять! Это ограбление!!!!";
     String wallComment = "Пост КГ/АМ, аффтор выпей йяду";
-    int n = 1; //Ноер поста для удаления
+    int deletePostNumber = 5; //Номер поста для удаления
+    int addCommentPostNumber = 1; //Номер поста для добавления комментария
 
 
 }
