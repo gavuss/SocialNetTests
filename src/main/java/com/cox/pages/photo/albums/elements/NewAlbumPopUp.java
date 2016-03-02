@@ -13,7 +13,7 @@ import ru.yandex.qatools.htmlelements.element.TextInput;
 /**
  * Created by silaev on 2/24/16.
  */
-@FindBy (css = ".albums__createalbum")
+@FindBy (css = ".cox-popup")
 public class NewAlbumPopUp extends HtmlElement {
 
     @Name("Кнопка \"Закрыть\"")

@@ -16,7 +16,8 @@ import ru.yandex.qatools.htmlelements.loader.decorator.HtmlElementLocatorFactory
  * Created by silaev on 1/20/16.
  */
 public class AuthorizePage {
-    private WebDriver driver;
+
+    public WebDriver driver;
 
     @Name("Форма авторизации")
     @FindBy(css = ".form-signin")

@@ -19,12 +19,11 @@ import java.util.List;
  */
 public class AlbumsPage extends CoxPage {
 
-    //private WebDriver driver;
+    public WebDriver driver;
 
     public AlbumsPage(WebDriver driver) {
         super(driver);
     }
-
 
     @Name("Поиск")
     @FindBy(css = ".m-search")
@@ -36,34 +35,33 @@ public class AlbumsPage extends CoxPage {
 
     //TODO: сделать UploadPopUp
     @Name("Кнопка \"Загрузить изображение\"")
-    @FindBy (css = ".cox-albums-upload")
+    @FindBy(css = ".cox-albums-upload")
     public Button uploadPopUp;
 
     //TODO: описать когда добавят функционал
     @Name("Кнопка \"Сделать снимок с камеры\"")
     //TODO: найти правильный локатор
-    @FindBy (css = "")
+    @FindBy(css = "")
     public Button snapShot;
 
     @Name("Показать все альбомы")
-    @FindBy (css = ".cox-albums-loading-albums")
+    @FindBy(css = ".cox-albums-loading-albums")
     public HtmlElement allAlbums;
 
     @Name("Список альбомов")
-    @FindBy (css = ".cox-albums-album")
+    @FindBy(css = ".cox-albums-album")
     public List<Album> album;
-
 
     public NewAlbumPopUp openNewAlbumPopUp() {
         createAlbumButton.click();
         return HtmlElementLoader.create(NewAlbumPopUp.class, driver);
     }
 
-    public void showAllAlbums () {
+    public void showAllAlbums() {
         allAlbums.click();
     }
 
-    public void allbumsCount () {
+    public void allbumsCount() {
         allAlbums.getText();
     }
 
