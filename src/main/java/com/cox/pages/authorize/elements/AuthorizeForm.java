@@ -9,6 +9,7 @@ import ru.yandex.qatools.htmlelements.element.TextInput;
 /**
  * Created by silaev on 1/20/16.
  */
+//add comment
 @Name("Форма Авторизации")
 public class AuthorizeForm extends HtmlElement {
 
